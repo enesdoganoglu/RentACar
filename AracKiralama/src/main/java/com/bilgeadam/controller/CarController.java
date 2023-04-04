@@ -18,10 +18,10 @@ import static com.bilgeadam.constants.EndPointList.*;
 public class CarController {
     private final CarService carService;
 
-    @PostMapping(SAVE)
+   /* @PostMapping(SAVE)
     public ResponseEntity<Car> saveKitap(@RequestBody @Valid SaveCarRequestDto dto) {
         return ResponseEntity.ok(carService.save(dto));
-    }
+    }*/
 
     @GetMapping(FIND_ALL)
     public ResponseEntity<List<Car>> findAll() {

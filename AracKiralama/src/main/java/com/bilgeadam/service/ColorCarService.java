@@ -1,11 +1,10 @@
 package com.bilgeadam.service;
 
 import com.bilgeadam.repository.IColorCarRepository;
-import com.bilgeadam.repository.entity.BrandCar;
 import com.bilgeadam.repository.entity.ColorCar;
 import com.bilgeadam.utility.ServiceManager;
 
-public class ColorCarService extends ServiceManager<ColorCar,Long> {
+public class ColorCarService extends ServiceManager<ColorCar,Integer> {
 
     private final IColorCarRepository repository;
 
