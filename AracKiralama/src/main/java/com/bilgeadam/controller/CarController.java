@@ -1,9 +1,9 @@
 package com.bilgeadam.controller;
 
-import com.bilgeadam.dto.request.SaveCarRequestDto;
+
+
 import com.bilgeadam.repository.entity.Car;
 import com.bilgeadam.service.CarService;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,10 +18,10 @@ import static com.bilgeadam.constants.EndPointList.*;
 public class CarController {
     private final CarService carService;
 
-   /* @PostMapping(SAVE)
-    public ResponseEntity<Car> saveKitap(@RequestBody @Valid SaveCarRequestDto dto) {
+    @PostMapping(SAVE)
+    public ResponseEntity<Car> saveCar(@RequestBody Car dto) {
         return ResponseEntity.ok(carService.save(dto));
-    }*/
+    }
 
     @GetMapping(FIND_ALL)
     public ResponseEntity<List<Car>> findAll() {
@@ -29,23 +29,27 @@ public class CarController {
         return ResponseEntity.ok(result);
     }
 
-    @GetMapping("/find-by-name")
-    public ResponseEntity<List<Car>> findAllByNameStartingWithIgnoreCase(String name){
-        return ResponseEntity.ok(carService.findAllByNameStartingWithIgnoreCase(name));
-    }
 
-    @GetMapping("/find-by-brand")
-    public ResponseEntity<List<Car>> findAllByBrandid(Long id){
-        return ResponseEntity.ok(carService.findAllByBrandid(id));
-    }
 
-    @GetMapping("/find-color-brand")
-    public ResponseEntity<List<Car>> findCarsWithColorAndBrand(){
-        return ResponseEntity.ok(carService.findCarsWithColorAndBrand());
-    }
-
-    @GetMapping("/find-daily-price")
+    @GetMapping(FIND_DAILY_PRICE)
     public ResponseEntity<List<Car>> findAllByDailyPriceLessThanEqual(int dailyPrice){
         return ResponseEntity.ok(carService.findAllByDailyPriceLessThanEqual(dailyPrice));
     }
+
+    @GetMapping(FIND_BY_NAME)
+    public ResponseEntity<List<Car>> findAllByCarNameStartingWithIgnoreCase(String name){
+        return ResponseEntity.ok(carService.findAllByCarNameStartingWithIgnoreCase(name));
+    }
+
+    @GetMapping(FIND_BY_BRAND)
+    public ResponseEntity<List<Car>> findAllByBrandId(int id){
+        return ResponseEntity.ok(carService.findAllByBrandid(id));
+    }
+
+    @GetMapping(FIND_BY_COLOR)
+    public ResponseEntity<List<Car>> findAllByColorId(int colorId){
+        return ResponseEntity.ok(carService.findAllByColorid(colorId));
+    }
+
+
 }

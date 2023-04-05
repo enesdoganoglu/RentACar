@@ -1,7 +1,7 @@
 package com.bilgeadam.repository.entity;
 
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,23 +19,23 @@ import java.util.List;
 public class Car {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer carid;
+    private Integer carId;
 
-    private String carname;
+    private String carName;
 
-    private Integer model_year;
+    private Integer modelYear;
 
-    private Integer daily_price;
+    private Integer dailyPrice;
 
     private String description;
 
-    private Integer brandid;
+    private Integer brandId;
 
     private Integer colorId;
 
     private Integer rentId;
     //OneToOne
-    private Integer customerid;
+    private Integer customerId;
 
 
 

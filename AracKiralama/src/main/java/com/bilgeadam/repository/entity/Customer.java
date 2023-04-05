@@ -1,6 +1,6 @@
 package com.bilgeadam.repository.entity;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -15,8 +15,8 @@ import lombok.NoArgsConstructor;
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer custemerid;
-    private String custemername;
-    private String company_name;
+    private Integer custemerId;
+    private String custemerName;
+    private String companyName;
 
 }

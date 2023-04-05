@@ -14,5 +14,13 @@ public class EndPointList {
     public static final String CUSTOMER = "/customer";
     public static final String RENTAL = "/rental";
 
+    public static final String  FIND_BY_NAME = "/find-by-name";
+
+    public static final String  FIND_BY_BRAND  = "/find-by-brand";
+
+    public static final String   FIND_BY_COLOR  = "/find-by-color";
+
+    public static final String   FIND_DAILY_PRICE = "/find-daily-price";
+
 
 }

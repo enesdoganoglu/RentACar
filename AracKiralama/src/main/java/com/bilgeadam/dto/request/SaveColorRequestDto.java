@@ -1,5 +1,5 @@
 package com.bilgeadam.dto.request;
-import jakarta.persistence.ElementCollection;
+import javax.persistence.ElementCollection;
 import lombok.*;
 
 import java.util.List;
@@ -10,7 +10,7 @@ import java.util.List;
 @Builder
 public class SaveColorRequestDto {
 
-     String name;
+     String colorName;
 
 
 }

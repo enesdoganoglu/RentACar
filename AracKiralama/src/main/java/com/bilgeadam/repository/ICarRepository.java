@@ -10,10 +10,12 @@ import java.util.List;
 public interface ICarRepository extends JpaRepository<Car, Integer> {
     List<Car> findAllByDailyPriceLessThanEqual(int dailyPrice);
 
+    List<Car> findAllByCarNameStartingWithIgnoreCase(String carName);
 
-    List<Car> findCarsWithColorAndBrand();
+    List<Car> findAllByBrandId(int id);
 
-    List<Car> findAllByNameStartingWithIgnoreCase(String name);
+    List<Car> findAllByColorId(int colorId);
 
-    List<Car> findAllByBrandid(Long id);
+
+
 }

@@ -1,6 +1,6 @@
 package com.bilgeadam.repository.entity;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,7 +17,7 @@ import java.util.List;
 public class Color {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer colorid;
-    private String colorname;
+    private Integer colorId;
+    private String colorName;
 
 }

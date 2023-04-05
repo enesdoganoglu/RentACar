@@ -11,6 +11,6 @@ import java.util.List;
 @Builder
 public class SaveBrandRequestDto {
 
-    String brandname;
+    String brandName;
 
 }

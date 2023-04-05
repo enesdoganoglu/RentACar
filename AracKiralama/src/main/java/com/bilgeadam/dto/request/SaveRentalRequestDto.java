@@ -9,5 +9,5 @@ import java.time.LocalDate;
 @Builder
 public class SaveRentalRequestDto {
 
-    LocalDate rent_date;
+    LocalDate rentDate;
 }

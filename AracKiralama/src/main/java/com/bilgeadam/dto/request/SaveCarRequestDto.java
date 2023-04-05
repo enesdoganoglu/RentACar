@@ -1,8 +1,8 @@
 package com.bilgeadam.dto.request;
-import jakarta.persistence.ElementCollection;
+
 import lombok.*;
 
-import java.util.List;
+
 
 @Data
 @NoArgsConstructor
@@ -10,21 +10,21 @@ import java.util.List;
 @Builder
 public class SaveCarRequestDto {
 
-    String carname;
+    String carName;
 
-    Integer model_year;
+    Integer modelYear;
 
-    Integer daily_price;
+    Integer dailyPrice;
 
     String description;
 
-    Integer brandid;
+    Integer brandId;
     
     Integer colorId;
 
     Integer rentId;
     //OneToOne
-    Integer customerid;
+    Integer customerId;
 
 
 }

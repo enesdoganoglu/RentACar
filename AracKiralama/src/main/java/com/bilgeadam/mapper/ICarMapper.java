@@ -8,6 +8,7 @@ import org.mapstruct.factory.Mappers;
 
 @Mapper(unmappedTargetPolicy = ReportingPolicy.IGNORE,componentModel = "spring")
 public interface ICarMapper {
+
     ICarMapper INSTANCE= Mappers.getMapper(ICarMapper.class);
     Car toCar(final SaveCarRequestDto dto);
 }

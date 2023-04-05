@@ -1,13 +1,12 @@
 package com.bilgeadam.repository.entity;
 
-import jakarta.persistence.*;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.*;
 import java.util.List;
 
 @Entity
@@ -19,7 +18,7 @@ import java.util.List;
 public class Brand {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer brandid;
-    private String brandname;
+    private Integer brandId;
+    private String brandName;
 
 }

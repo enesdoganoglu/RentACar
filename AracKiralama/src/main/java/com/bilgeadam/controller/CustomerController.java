@@ -3,7 +3,7 @@ package com.bilgeadam.controller;
 import com.bilgeadam.dto.request.SaveCustomerRequestDto;
 import com.bilgeadam.repository.entity.Customer;
 import com.bilgeadam.service.CustomerService;
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -3,7 +3,7 @@ package com.bilgeadam.controller;
 import com.bilgeadam.dto.request.SaveRentalRequestDto;
 import com.bilgeadam.repository.entity.Rental;
 import com.bilgeadam.service.RentalService;
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,8 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-import static com.bilgeadam.constants.EndPointList.FIND_ALL;
-import static com.bilgeadam.constants.EndPointList.RENTAL;
+import static com.bilgeadam.constants.EndPointList.*;
 
 
 @RestController

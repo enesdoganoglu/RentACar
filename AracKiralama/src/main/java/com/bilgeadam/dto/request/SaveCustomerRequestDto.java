@@ -1,5 +1,5 @@
 package com.bilgeadam.dto.request;
-import jakarta.persistence.ElementCollection;
+import javax.persistence.ElementCollection;
 import lombok.*;
 
 @Data
@@ -7,7 +7,7 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 public class SaveCustomerRequestDto {
-     String name;
-     String company_name;
+     String custemerName;
+     String companyName;
 
 }

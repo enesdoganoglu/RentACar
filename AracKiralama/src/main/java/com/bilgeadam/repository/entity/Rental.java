@@ -1,9 +1,7 @@
 package com.bilgeadam.repository.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import javax.persistence.*;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,10 +17,9 @@ import java.time.LocalDate;
 public class Rental {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer rentalid;
-    private LocalDate rent_date;
-    private Integer carids;
-    private Integer customerids;
+    private Integer rentalId;
+    private LocalDate rentDate;
+
 
 
 }

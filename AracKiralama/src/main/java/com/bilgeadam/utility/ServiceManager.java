@@ -1,5 +1,4 @@
 package com.bilgeadam.utility;
-import com.bilgeadam.repository.IBrandCarRepository;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
