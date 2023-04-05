@@ -1,6 +1,7 @@
 package com.bilgeadam.service;
 
 
+import com.bilgeadam.dto.response.FindAllCarRentPriceDto;
 import com.bilgeadam.exception.AracKiralamaException;
 import com.bilgeadam.exception.ErrorType;
 import com.bilgeadam.repository.ICarRepository;
@@ -46,6 +47,10 @@ public class CarService extends ServiceManager<Car,Integer> {
             throw new AracKiralamaException(ErrorType.CAR_NOT_FOUND);
         }
         return car;
+    }
+
+    public List<FindAllCarRentPriceDto> findAllCarRentPrice(){
+        return repository.findAllCarRentPrice();
     }
 
 

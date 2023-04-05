@@ -17,7 +17,7 @@ import java.time.LocalDate;
 public class Rental {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer rentalId;
+    private Integer rentalId ;
     private LocalDate rentDate;
 
 

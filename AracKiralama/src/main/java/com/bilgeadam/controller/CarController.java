@@ -2,6 +2,7 @@ package com.bilgeadam.controller;
 
 
 
+import com.bilgeadam.dto.response.FindAllCarRentPriceDto;
 import com.bilgeadam.repository.entity.Car;
 import com.bilgeadam.service.CarService;
 import lombok.RequiredArgsConstructor;
@@ -41,6 +42,7 @@ public class CarController {
         return ResponseEntity.ok(carService.findAllByCarNameStartingWithIgnoreCase(name));
     }
 
+
     @GetMapping(FIND_BY_BRAND)
     public ResponseEntity<List<Car>> findAllByBrandId(int id){
         return ResponseEntity.ok(carService.findAllByBrandid(id));
@@ -50,6 +52,13 @@ public class CarController {
     public ResponseEntity<List<Car>> findAllByColorId(int colorId){
         return ResponseEntity.ok(carService.findAllByColorid(colorId));
     }
+
+    @GetMapping("/find-car-rent")
+    public ResponseEntity<List<FindAllCarRentPriceDto>> findAllCarRentPrice(){
+        return ResponseEntity.ok(carService.findAllCarRentPrice());
+    }
+
+
 
 
 }
